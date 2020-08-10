@@ -1,4 +1,167 @@
-h1 {
-	color: blue;
-	border: 1px solid blue; 
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2"),
+    url("../fonts/OpenSans-Bold.woff") format("woff"),
+    url("../fonts/OpenSans-Bold.ttf") format("opentype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("../fonts/OpenSans-Regular.woff") format("woff"),
+    url("../fonts/OpenSans-Regular.ttf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+svg {
+  fill: #ffffff;
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.container {
+  width: calc(100% - 100px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  position: relative;
+  z-index: 1;
+  color: #0000000;
+  background-image: url("../images/football_767.jpg");
+  background-color: #0a0f3d;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  background-color: #0a0f3d;
+  z-index: -1;
+  opacity: 0.9;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.logo-text {
+  width: 35vmin;
+}
+
+.header-intro .title {
+  font-size: 8vmin;
+}
+
+.header-title {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.header-title-secondpart {
+  margin-left: 45px;
+}
+
+.header-content {
+  width: 100%;
+}
+
+.download-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.download-link {
+  color: #ffffff;
+}
+
+.link-wrapper {
+  background-color: #5e3db3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2vmin 0;
+  border-radius: 11vmin;
+}
+
+.download-link svg {
+  width: 7vmin;
+}
+
+.link-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 25%;
+  margin-left: 10px;
+  font-size: 3vmin;
+  text-transform: uppercase;
+}
+
+.download-links li:first-child {
+  margin-bottom: 2.5vh;
+}
+
+.store-name {
+  font-weight: 700;
 }
